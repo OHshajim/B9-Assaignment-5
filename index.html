@@ -74,50 +74,77 @@
                 </div>
                 <!-- blocks -->
                 <div class=" absolute bottom-[-50px] left-[18vw] hidden 2xl:block">
-                <div class="flex gap-10 ">
-                <div class="stats shadow border-b-4 border-[#1DD100] py-6  px-4 w-80 ">
+                    <div class="flex gap-10 ">
+                        <div class="stats shadow border-b-4 border-[#1DD100] py-6  px-4 w-80 ">
 
-                    <div class="stat flex">
-                        <div class="stat-title"><img src="./images/people.png" alt=""></div>
-                        <div>
-                            <div class="stat-value">500K+</div>
-                            <div class="stat-desc">Registered users</div>
+                            <div class="stat flex">
+                                <div class="stat-title"><img src="./images/people.png" alt=""></div>
+                                <div>
+                                    <div class="stat-value">500K+</div>
+                                    <div class="stat-desc">Registered users</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="stats shadow border-b-4 border-[#1DD100]  py-6  px-4 w-80">
+
+                            <div class="stat flex">
+                                <div class="stat-title"><img src="./images/ticket-cupon.png" alt=""></div>
+                                <div>
+                                    <div class="stat-value">1.7 lacks</div>
+                                    <div class="stat-desc">Tickets sold</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="stats shadow   border-b-4 border-[#1DD100]  py-6  px-4 w-80">
+
+                            <div class="stat flex">
+                                <div class="stat-title"><img src="./images/stoppage.png" alt=""></div>
+                                <div>
+                                    <div class="stat-value">80K+</div>
+                                    <div class="stat-desc">Rental partners</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                </div>
-                <div class="stats shadow border-b-4 border-[#1DD100]  py-6  px-4 w-80">
-
-                    <div class="stat flex">
-                        <div class="stat-title"><img src="./images/ticket-cupon.png" alt=""></div>
-                        <div>
-                            <div class="stat-value">1.7 lacks</div>
-                            <div class="stat-desc">Tickets sold</div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="stats shadow   border-b-4 border-[#1DD100]  py-6  px-4 w-80">
-
-                    <div class="stat flex">
-                        <div class="stat-title"><img src="./images/stoppage.png" alt=""></div>
-                        <div>
-                            <div class="stat-value">80K+</div>
-                            <div class="stat-desc">Rental partners</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
                 </div>
             </div>
         </div>
 
     </header>
     <main>
-        <section>
-            <h1>Best offers for you</h1>
-
+        <!-- offer section -->
+        <section class="flex flex-col justify-center items-center mt-32">
+            <h1 class="text-4xl font-bold font-raleway ">Best offers for you</h1>
+            <div class="flex flex-col  xl:flex-row  gap-10">
+                <div class="card bg-[#FFBF0F] rounded-3xl border-none  flex flex-row items-center h-60 w-[585px] mt-10 ">
+                    <div class="card-body">
+                        <h2 class="card-title text-5xl font-inter font-extrabold">15% OFF</h2>
+                        <p class="font-inter text-xl font-semibold">on your next purchase <br> <span
+                                class="text-[#03071280] text-lg  font-medium">use by January 2024</span> </p>
+                    </div>
+                    <figure><img src="./images/cupon-devider.png" alt="divider" class="h-60" /></figure>
+                    <div class="p-3">
+                        <h1 class="card-title font-raleway text-4xl font-bold">NEW15</h1>
+                        <p class=" font-raleway text-xl text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="card bg-[#F78C9C] rounded-3xl border-none  flex flex-row items-center h-60 w-[585px] mt-10">
+                    <div class="card-body">
+                        <h2 class="card-title text-5xl font-inter font-extrabold">15% OFF</h2>
+                        <p class="font-inter text-xl font-semibold">on your next purchase <br> <span
+                                class="text-[#03071280] text-lg  font-medium">use by January 2024</span> </p>
+                    </div>
+                    <figure><img src="./images/cupon-devider.png" alt="divider" class="h-60" /></figure>
+                    <div class="p-3">
+                        <h1 class="card-title font-raleway text-4xl font-bold">Couple 20</h1>
+                        <p class=" font-raleway text-xl text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn text-[#1DD100] bg-transparent border-[#1DD100] border-dotted border-2 text-xl font-raleway font-bold py-4 h-14 lg:px-8  mt-10">See All Offers</button>
         </section>
     </main>
     <footer></footer>
