@@ -4,6 +4,12 @@
 .font-raleway {
     font-family: "Raleway", sans-serif;
 }
-.font-inter{
+
+.font-inter {
     font-family: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
