@@ -68,7 +68,8 @@
                             and view
                             the results directly within the app. <br> The integrated testing
                             features allow for a streamlined .</P>
-                        <button class="btn bg-[#1DD100] text-black text-xl px-8 h-16 border-none "><a href="#Counter">Buy Tickets</a></button>
+                        <button class="btn bg-[#1DD100] text-black text-xl px-8 h-16 border-none "><a
+                                href="#Counter">Buy Tickets</a></button>
                     </div>
 
 
@@ -328,7 +329,8 @@
                             <div class="my-1 ">
                                 <!-- selected seats -->
                             </div>
-                            <hr/><hr>
+                            <hr />
+                            <hr>
                         </div>
 
                         <div class="flex justify-between text-black text-base font-inter font-medium items-center">
@@ -355,12 +357,27 @@
                         <h3 class="">Email ID*</h3>
                         <input type="text" placeholder="Enter Your email id"
                             class="input input-bordered w-full bg-transparent" />
-                        <button
-                            class="btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway ">Next</button>
+                        <button class="btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway "
+                            disabled onclick="my_modal_5.showModal()">Next</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                     <div class="flex justify-between mt-5 text-[#03071299]">
                         <a href="#" class="underline">Terms and Conditions</a>
-                        <a href="#" class="underline"><p>Cancellation Policy</p></a>
+                        <a href="#" class="underline">
+                            <p>Cancellation Policy</p>
+                        </a>
                     </div>
                 </div>
             </div>
