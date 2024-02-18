@@ -20,4 +20,14 @@
 html {
     scroll-behavior: smooth;
    }
+
+   #driving-seat:hover{
+   cursor: not-allowed;
+}
+#seat-btn:hover{
+    opacity: .5;
+}
+#seat-btn:active {
+    transform: translatey(4px);
+  }
   
