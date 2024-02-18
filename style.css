@@ -17,3 +17,7 @@
 #regular-seat button{
     width: 110px;
 }
+html {
+    scroll-behavior: smooth;
+   }
+  
