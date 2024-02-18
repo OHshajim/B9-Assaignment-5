@@ -24,10 +24,10 @@ html {
    #driving-seat:hover{
    cursor: not-allowed;
 }
-#seat-btn:hover{
+.seat-btn:hover{
     opacity: .5;
 }
-#seat-btn:active {
+.seat-btn:active {
     transform: translatey(4px);
   }
   
