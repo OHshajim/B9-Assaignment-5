@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
+<!-- data-theme="light" -->
 
 <head>
     <meta charset="UTF-8">
@@ -118,7 +119,7 @@
         <!-- offer section -->
         <section class="flex flex-col justify-center items-center mt-32">
             <h1 class="text-4xl font-bold font-raleway ">Best offers for you</h1>
-            <div class="flex flex-col  xl:flex-row  gap-10">
+            <div class="flex flex-col  xl:flex-row  gap-10 text-black">
                 <div
                     class="card bg-[#FFBF0F] rounded-3xl border-none  flex flex-row items-center h-60 w-[585px] mt-10 ">
                     <div class="card-body">
@@ -146,17 +147,17 @@
                 </div>
             </div>
             <button
-                class="btn text-[#1DD100] bg-transparent border-[#1DD100] border-dotted border-2 text-xl font-raleway font-bold py-4 h-14 lg:px-8  mt-10">See
+                class="btn text-[#1DD100] bg-transparent border-[#1DD100] border-dotted border-2 text-xl font-raleway font-bold py-4 h-16 lg:px-8  mt-10">See
                 All Offers</button>
         </section>
         <!-- counter section  -->
-        <section class="border-t-2 border-[#1DD100] rounded-t-[88px] mt-10 bg-[#F7F8F8]">
+        <section class="border-t-2 border-[#1DD100] rounded-t-[88px] mt-10 pb-1 bg-[#F7F8F8]">
             <h1 class="text-4xl font-raleway font-bold text-center mt-32">P.H Paribahan</h1>
             <p class="text-lg font-inter font-normal text-[#03071299] text-center mt-5">Yes, you can run unit tests and
                 view the results directly within the app. The integrated testing features
                 allow for a streamlined .</p>
-                <!-- ticket part-->
-            <div class="h-[420px] flex rounded-3xl bg-white  mx-4  lg:mx-28 lg:my-12">
+            <!-- ticket part-->
+            <div class="h-[420px] flex rounded-3xl bg-white  mx-4  lg:mx-28 lg:my-12 ">
                 <div class="flex-1 p-10">
                     <div class="flex justify-between ">
                         <div class="flex  gap-5 items-center">
@@ -207,27 +208,204 @@
             </div>
 
             <!-- seat part -->
-            <div class="rounded-3xl bg-white  mx-4  lg:mx-28 lg:my-20 p-10">
+            <div
+                class="rounded-3xl bg-white  mx-4  lg:mx-28 lg:my-20 p-10 flex flex-col xl:flex-row justify-evenly   gap-10 ">
                 <!-- seat select -->
                 <div>
                     <h3 class="text-2xl font-raleway font-semibold">Select Your Seat</h3>
                     <hr style="border-top: dashed 2px #03071233; " />
-                    <div class="flex justify-between">
+                    <div class="flex justify-between my-3 ">
                         <div class="flex items-center">
-                            <img src="./images/seat-gray.png" class="border-dashed border " alt="seat">
+                            <img src="./images/seat-gray.png" alt="seat">
                             <p class="text-lg font-inter font-medium text-[#03071280]">Available</p>
                         </div>
-                        <div class="flex items-center">
-                            <img src="./images/seat-green-filled.png" class="border-dashed border " alt="seat">
-                            <p class="text-[#1DD100] text-lg font-inter font-medium">Selected</p>
+                        <div class="flex items-center ">
+                            <img src="./images/seat-green-filled.png" alt="seat">
+                            <p class="text-lg font-inter font-medium text-[#1DD100]">Available</p>
                         </div>
                     </div>
                     <hr style="border-top: dashed 2px #03071233; " />
+                    <!-- driving seat -->
+                    <div class="flex justify-end my-7">
+                        <button class="px-11 py-4 bg-[#0307121A] rounded-xl w-28"><img src="./images/Vector.png"
+                                alt=""></button>
+                    </div>
+                    <!-- all seat -->
+                    <div id="regular-seat" class="flex w-full items-center gap-6">
+                        <div class="flex flex-col  gap-4 h-full space-y-8">
+                            <p>A</p>
+                            <p>B</p>
+                            <p>C</p>
+                            <p>D</p>
+                            <p>E</p>
+                            <p>F</p>
+                            <p>G</p>
+                            <p>H</p>
+                            <p>I</p>
+                            <p>J</p>
+                        </div>
+                        <div class="grid grid-row-10 grid-cols-5 gap-4 items-center w-full">
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">A1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">A2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">A3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">A4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">B1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">B2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">B3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">B4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">C1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">C2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">C3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">C4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">D1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">D2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">D3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">D4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">E1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">E2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">E3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">E4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">F1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">F2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">F3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">F4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">G1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">G2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">G3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">G4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">H1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">H2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">H3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">H4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">I1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">I2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">I3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">I4</button>
+
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">J1</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">J2</button>
+                            <p></p>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">J3</button>
+                            <button class="px-11 py-4 bg-[#F7F8F8] rounded-xl ">J4</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden xl:block" style="border-left: 2px dashed ; height: 900px;"></div>
+                <!-- purchase part -->
+                <div>
+                    <h3 class="text-2xl font-raleway font-semibold ">Select Your Seat</h3>
+                    <hr style="border-top: dashed 2px #03071233; " />
+
+                    <div class="bg-[#F7F8F8] mt-8 p-8">
+                        <div class="flex justify-between text-black text-base font-inter font-medium items-center">
+                            <h4>Seat <span
+                                    class="bg-[#1DD100] text-[12px] font-bold px-1 h-[13px] rounded-[5px] text-white">0</span>
+                            </h4>
+                            <h4>Class</h4>
+                            <h4>Price</h4>
+                        </div>
+                        <hr style="border-top: dashed 2px #03071233; " />
+                        <div class="hidden">
+                            <div class="my-1 ">
+                                <!-- selected seats -->
+                            </div>
+                            <hr />
+                        </div>
+                        <hr>
+                        <div class="flex justify-between text-black text-base font-inter font-medium items-center">
+                            <h4>Total Price</h4>
+                            <h4>BDT <span>000</span></h4>
+                        </div>
+                        <div class="relative w-[369px] h-14 ">
+                            <input class="input  bg-white w-full h-full" placeholder="Have any coupon?" />
+                            <button
+                                class="btn join-item bg-[#1DD100] text-white border-none  rounded-xl absolute w-[20%] h-[70%] right-1 top-1 ">Apply</button>
+                        </div>
+                        <div class="flex justify-between text-black text-base font-inter font-medium items-center">
+                            <h4>Grand Total</h4>
+                            <h4>BDT <span>000</span></h4>
+                        </div>
+                    </div>
+                    <div class="w-full font-inter text-base font-medium text-black space-y-4 mt-10">
+                        <h3 class="">Passenger Name*</h3>
+                        <input type="text" placeholder="Enter Your Name"
+                            class="input input-bordered w-full bg-transparent" />
+                        <h3 class="">Phone Number*</h3>
+                        <input required type="text" placeholder="Enter your phone number"
+                            class="input input-bordered w-full bg-transparent" />
+                        <h3 class="">Email ID*</h3>
+                        <input type="text" placeholder="Enter Your email id"
+                            class="input input-bordered w-full bg-transparent" />
+                        <button
+                            class="btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway ">Next</button>
+                    </div>
+                    <div class="flex justify-between mt-5 text-[#03071299]">
+                        <a href="#" class="underline">Terms and Conditions</a>
+                        <a href="#" class="underline"><p>Cancellation Policy</p></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class=" p-10 xl:p-28 bg-[#030712] space-y-10">
+        <footer class=" flex flex-col lg:flex-row justify-between items-center  space-y-10">
+            <nav>
+                <h6 class="footer-title text-4xl text-white opacity-100 font-ralewaty font-extrabold ">P-Ticket</h6>
+                <p class="text-[#FFFFFFCC] font-inter text-lg ">P-Ticket is a digital platform to make your daily
+                    commuting better.</p>
+            </nav>
+            <nav>
+                <h6 class="footer-title text-xl text-white opacity-100 font-ralewaty font-semibold">Download our app
+                </h6>
+                <!-- playstore tag -->
+                <div class="flex items-center gap-3 border-white border rounded-lg py-3 px-4 text-white">
+                    <a class="link link-hover"><img src="./images/playstore.png" alt="playstore"></a>
+                    <div>
+                        <p>GET IT ON</p>
+                        <h3 class="text-2xl">Google Play</h3>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        <footer
+            class=" pt-4 xl:pt-10 border-t text-base border-[#FFFFFF4D] border-dashed flex items-center justify-between">
+            <aside>
+                <p class="font-inter font-medium text-base">@all rights reserved, P-Ticket services limited.2024</p>
+            </aside>
+            <ul
+                class="font-inter font-medium text-base flex flex-col md:flex-row  items-center gap-x-10 gap-y-3 text-white">
+                <a>
+                    <li>Terms & condition</li>
+                </a>
+                <a>
+                    <li>Return & refund policy</li>
+                </a>
+                <a>
+                    <li>Privacy policy</li>
+                </a>
+            </ul>
+        </footer>
+    </footer>
+
     <script src="js/index.js"></script>
 </body>
 
