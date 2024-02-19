@@ -14,7 +14,7 @@ const discountPart = document.getElementById('discount-part')
 const totalPrice = document.getElementById('total-price')
 const discount = document.getElementById('discount')
 const grandTotal = document.getElementById('grand-total')
-const Number = document.getElementById('number')
+const inputNumber = document.getElementById('number')
 const inputBtn = document.getElementById('input-btn')
 
 // values
@@ -22,7 +22,7 @@ let countTicket = 0;
 let countSeat = 40;
 let price = 550;
 for (const seat of seats) {
-    seat.addEventListener('click', function () {
+    seat.addEventListener('click', function seatClick() {
         seat.classList.remove('bg-[#F7F8F8]');
         seat.classList.add('bg-[#1DD100]');
         seat.classList.add('text-white');
@@ -72,9 +72,18 @@ for (const seat of seats) {
             })
         };
         // input button
-        if (countTicket > 0 && parseInt(Number.value.length) >0 ) {
-            inputBtn.disabled = false;
-        };
+        if (countTicket > 0) {
+            inputNumber.disabled = false;
+        }
     })
 };
+inputNumber.addEventListener('keyup', function () {
+    const number = inputNumber.value.length;
+    if (number > 0) {
+        inputBtn.disabled = false;
+    }
+    else {
+        inputBtn.disabled = true;
+    };
+})
 

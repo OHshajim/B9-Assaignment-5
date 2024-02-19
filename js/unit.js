@@ -17,3 +17,8 @@ function showTickets(seat) {
     p2.classList.add('justify-end')
     ticketContainer.appendChild(p2);
 };
+// a function for active button
+function activeBtn(){
+    console.log( inputNumber.value.length);
+
+};
