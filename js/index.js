@@ -51,7 +51,7 @@ for (const seat of seats) {
 
         // coupon part 
         if (countTicket >= 4) {
-            couponBTN.disabled = false ;
+            couponBTN.disabled = false;
             couponBTN.addEventListener('click', function () {
                 if (couponInput.value === "NEW15" && countTicket === 4) {
                     grandTotal.innerText = 550 * 4 - 550 * 4 * 0.15;
@@ -70,8 +70,11 @@ for (const seat of seats) {
                     couponInput.value = "";
                 }
             })
-        }
-
+        };
+        // input button
+        if (countTicket > 0 && parseInt(Number.value.length) >0 ) {
+            inputBtn.disabled = false;
+        };
     })
 };
 
