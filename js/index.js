@@ -1,9 +1,5 @@
 /**
  * get all elements 
- * 1. all seats
- * 2. number of ticket
- * 3. number of seat
- * 4. show tickets
  */
 const seats = document.querySelectorAll(".seat-btn");
 const Tickets = document.querySelectorAll("tickets");
@@ -18,6 +14,9 @@ const discountPart = document.getElementById('discount-part')
 const totalPrice = document.getElementById('total-price')
 const discount = document.getElementById('discount')
 const grandTotal = document.getElementById('grand-total')
+const Number = document.getElementById('number')
+const inputBtn =document.getElementById('input-btn')
+
 // values
 let countTicket = 0;
 let countSeat = 40;
@@ -28,6 +27,7 @@ for (const seat of seats) {
         seat.classList.add('bg-[#1DD100]');
         seat.classList.add('text-white');
         seat.disabled = true;
+        
         // increment and decrement 
         countTicket++;
         countSeat--;
@@ -48,8 +48,8 @@ for (const seat of seats) {
         // show tickets
         Container.classList.remove('hidden');
         showTickets(seat)
-        // coupon part 
 
+        // coupon part 
         couponBTN.addEventListener('click', function () {
             if (couponInput.value === "NEW15" && countTicket === 4) {
                 grandTotal.innerText =550*4-550*4*0.15;
@@ -70,6 +70,8 @@ for (const seat of seats) {
             }
 
         })
+
+       
     })
 };
 

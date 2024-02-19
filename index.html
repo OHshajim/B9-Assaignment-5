@@ -354,19 +354,23 @@
                             <h4>BDT <span id="grand-total">000</span></h4>
                         </div>
                     </div>
+                    <!-- input area -->
                     <div class="w-full font-inter text-base font-medium text-black space-y-4 mt-10">
-                        <h3 class="">Passenger Name*</h3>
+
+                        <h3 >Passenger Name*</h3>
                         <input type="text" placeholder="Enter Your Name"
                             class="input input-bordered w-full bg-transparent" />
-                        <h3 class="">Phone Number*</h3>
-                        <input required type="text" placeholder="Enter your phone number"
-                            class="input input-bordered w-full bg-transparent" />
-                        <h3 class="">Email ID*</h3>
+
+                        <h3 >Phone Number*</h3>
+                        <input  id="number" placeholder="Enter your phone number"
+                            class="input input-bordered w-full bg-transparent"/>
+
+                        <h3 >Email ID*</h3>
                         <input type="text" placeholder="Enter Your email id"
                             class="input input-bordered w-full bg-transparent" />
 
-                        <button class="btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway "
-                            onclick="my_modal_5.showModal()" disabled>Next</button>
+                        <button id="input-btn" class=" btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway "
+                            onclick="my_modal_5.showModal()" >Next</button>
 
                         <!-- pop up part -->
                         <dialog id="my_modal_5" class="modal modal-middle ">
