@@ -9,25 +9,31 @@
     font-family: "Inter", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#regular-seat button{
+#banner {
+    background-image:url("./images/banner.png"), linear-gradient(180.00deg, rgba(3, 7, 18, 0.5), rgba(3, 7, 18, 0) 100%) ;
+}
+
+#regular-seat button {
     width: 110px;
 }
+
 html {
     scroll-behavior: smooth;
-   }
-
-   #driving-seat:hover{
-   cursor: not-allowed;
 }
-.seat-btn:hover{
+
+#driving-seat:hover {
+    cursor: not-allowed;
+}
+
+.seat-btn:hover {
     opacity: .5;
 }
+
 .seat-btn:active {
     transform: translatey(4px);
-  }
-  
+}
