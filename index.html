@@ -328,16 +328,8 @@
                         </div>
                         <hr style="border-top: dashed 2px #03071233; " />
                         <div id="container" class="hidden">
-                            <div id="ticket-container" class="my-1 ">
-                                <!-- selected seats -->
-                                <p class=" justify-between items-center text-[#03071299] text-base font-inter hidden ">
-                                    <span id="t1">...</span><span>Economy</span><span>550</span></p>
-                                <p class=" justify-between items-center text-[#03071299] text-base font-inter hidden ">
-                                    <span id="t2">...</span><span>Economy</span><span>550</span></p>
-                                <p class="justify-between items-center text-[#03071299] text-base font-inter hidden ">
-                                    <span id="t3">...</span><span>Economy</span><span>550</span></p>
-                                <p class=" justify-between items-center text-[#03071299] text-base font-inter hidden ">
-                                    <span id="t4">...</span><span>Economy</span><span>550</span></p>
+                            <div id="ticket-container" class="my-1  text-[#03071299] text-base font-inter grid grid-cols-3 ">
+
                             </div>
                             <hr />
                             <hr>
@@ -345,16 +337,16 @@
 
                         <div class="flex justify-between text-black text-base font-inter font-medium items-center">
                             <h4>Total Price</h4>
-                            <h4>BDT <span>000</span></h4>
+                            <h4>BDT <span id="total-price">000</span></h4>
                         </div>
-                        <div class="relative w-[369px] h-14 ">
-                            <input class="input  bg-white w-full h-full" placeholder="Have any coupon?" />
-                            <button
+                        <div id="coupon-part" class="relative  h-14 ">
+                            <input id="coupon-input" class="input rounded-xl bg-white w-full h-full" placeholder="Have any coupon?" />
+                            <button id="coupon-btn"
                                 class="btn join-item bg-[#1DD100] text-white border-none  rounded-xl absolute w-[20%] h-[70%] right-1 top-1 ">Apply</button>
                         </div>
-                        <div class="flex justify-between text-black text-base font-inter font-medium items-center">
+                        <div  class="flex justify-between text-black text-base font-inter font-medium items-center">
                             <h4>Grand Total</h4>
-                            <h4>BDT <span>000</span></h4>
+                            <h4>BDT <span id="grand-total">000</span></h4>
                         </div>
                     </div>
                     <div class="w-full font-inter text-base font-medium text-black space-y-4 mt-10">
@@ -444,6 +436,7 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/unit.js"></script>
 </body>
 
 </html>
