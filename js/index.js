@@ -14,7 +14,9 @@ const ticketContainer = document.getElementById('ticket-container');
 const couponInput = document.getElementById('coupon-input')
 const couponBTN = document.getElementById('coupon-btn')
 const couponPart = document.getElementById('coupon-part')
+const discountPart = document.getElementById('discount-part')
 const totalPrice = document.getElementById('total-price')
+const discount = document.getElementById('discount')
 const grandTotal = document.getElementById('grand-total')
 // values
 let countTicket = 0;
@@ -38,24 +40,28 @@ for (const seat of seats) {
                 seat.disabled = true;
             };
             alert('you cannot buy more than 4 tickets')
-
         };
         // calculate money
         totalPrice.innerText = price * countTicket;
         grandTotal.innerText = totalPrice.innerText;
+       
         // show tickets
         Container.classList.remove('hidden');
         showTickets(seat)
-
         // coupon part 
 
         couponBTN.addEventListener('click', function () {
             if (couponInput.value === "NEW15" && countTicket === 4) {
                 grandTotal.innerText =550*4-550*4*0.15;
-                couponPart.classList.add('hidden')
+                discount.innerText = 550*4*0.15;
+                couponPart.classList.add('hidden');
+                discountPart.classList.remove('hidden');
             }
             else if (couponInput.value === "Couple 20" && countTicket === 4) {
-                console.log("Couple 20");
+                grandTotal.innerText =550*4-550*4*0.2;
+                discount.innerText = 550*4*0.2;
+                couponPart.classList.add('hidden');
+                discountPart.classList.remove('hidden');
             }
             else {
                 alert('invalid Coupon')

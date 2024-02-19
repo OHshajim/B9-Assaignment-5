@@ -15,4 +15,3 @@ function showTickets(seat) {
     p2.classList.add('text-end')
     ticketContainer.appendChild(p2);
 };
-{/* <span>Economy</span> <span>550</span> */ }
