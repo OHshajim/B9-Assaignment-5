@@ -15,7 +15,7 @@ const totalPrice = document.getElementById('total-price')
 const discount = document.getElementById('discount')
 const grandTotal = document.getElementById('grand-total')
 const Number = document.getElementById('number')
-const inputBtn =document.getElementById('input-btn')
+const inputBtn = document.getElementById('input-btn')
 
 // values
 let countTicket = 0;
@@ -27,7 +27,7 @@ for (const seat of seats) {
         seat.classList.add('bg-[#1DD100]');
         seat.classList.add('text-white');
         seat.disabled = true;
-        
+
         // increment and decrement 
         countTicket++;
         countSeat--;
@@ -44,34 +44,34 @@ for (const seat of seats) {
         // calculate money
         totalPrice.innerText = price * countTicket;
         grandTotal.innerText = totalPrice.innerText;
-       
+
         // show tickets
         Container.classList.remove('hidden');
         showTickets(seat);
 
         // coupon part 
-        couponBTN.addEventListener('click', function () {
-            if (couponInput.value === "NEW15" && countTicket === 4) {
-                grandTotal.innerText =550*4-550*4*0.15;
-                discount.innerText = 550*4*0.15;
-                couponPart.classList.add('hidden');
-                discountPart.classList.remove('hidden');
-            }
-            else if (couponInput.value === "Couple 20" && countTicket === 4) {
-                grandTotal.innerText =550*4-550*4*0.2;
-                discount.innerText = 550*4*0.2;
-                couponPart.classList.add('hidden');
-                discountPart.classList.remove('hidden');
-            }
-            else {
-                alert('invalid Coupon')
-                couponInput.value = "";
-                console.log(countTicket);
-            }
+        if (countTicket >= 4) {
+            couponBTN.disabled = false ;
+            couponBTN.addEventListener('click', function () {
+                if (couponInput.value === "NEW15" && countTicket === 4) {
+                    grandTotal.innerText = 550 * 4 - 550 * 4 * 0.15;
+                    discount.innerText = 550 * 4 * 0.15;
+                    couponPart.classList.add('hidden');
+                    discountPart.classList.remove('hidden');
+                }
+                else if (couponInput.value === "Couple 20" && countTicket === 4) {
+                    grandTotal.innerText = 550 * 4 - 550 * 4 * 0.2;
+                    discount.innerText = 550 * 4 * 0.2;
+                    couponPart.classList.add('hidden');
+                    discountPart.classList.remove('hidden');
+                }
+                else {
+                    alert('invalid coupon')
+                    couponInput.value = "";
+                }
+            })
+        }
 
-        })
-
-       
     })
 };
 
