@@ -12,6 +12,6 @@ function showTickets(seat) {
 
     const p2 = document.createElement('p');
     p2.innerHTML = 550;
-    p2.classList.add('text-end')
+    p2.classList.add('text-end');
     ticketContainer.appendChild(p2);
 };

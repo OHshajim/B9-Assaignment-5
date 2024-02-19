@@ -58,7 +58,7 @@
             <div class=" w-full relative">
                 <!-- bg-image -->
                 <div class="flex justify-center items-top bg-cover h-[75vh] bg-center rounded-[36px]"
-                    style="background-image: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%),url('./Images/banner.png')">
+                    style="background-image: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%),url('/Images/banner.png')">
                     <!-- text-part -->
                     <div class="text-center  space-y-4 lg:space-y-[3rem] pt-32">
                         <h1 class="text-3xl xl:text-6xl xl:leading-[86px] font-raleway font-extrabold text-white ">
@@ -313,6 +313,7 @@
                     </div>
                 </div>
                 <div class="hidden xl:block" style="border-left: 2px dashed ; height: 900px;"></div>
+
                 <!-- purchase part -->
                 <div>
                     <h3 class="text-2xl font-raleway font-semibold ">Select Your Seat</h3>
@@ -328,11 +329,11 @@
                         </div>
                         <hr style="border-top: dashed 2px #03071233; " />
                         <div id="container" class="hidden">
-                            <div id="ticket-container" class="my-1  text-[#03071299] text-base font-inter grid grid-cols-3 ">
+                            <div id="ticket-container" class="my-1  text-[#03071299] text-base font-inter grid grid-cols-3 items-center ">
 
                             </div>
-                            <hr />
-                            <hr>
+                            <hr/>
+                            <hr/>
                         </div>
 
                         <div class="flex justify-between text-black text-base font-inter font-medium items-center">
@@ -357,20 +358,19 @@
                     <!-- input area -->
                     <div class="w-full font-inter text-base font-medium text-black space-y-4 mt-10">
 
-                        <h3 >Passenger Name*</h3>
+                        <h3>Passenger Name*</h3>
                         <input type="text" placeholder="Enter Your Name"
                             class="input input-bordered w-full bg-transparent" />
 
                         <h3 >Phone Number*</h3>
-                        <input  id="number" placeholder="Enter your phone number"
+                        <input id="number" placeholder="Enter your phone number"
                             class="input input-bordered w-full bg-transparent"/>
 
-                        <h3 >Email ID*</h3>
+                        <h3>Email ID*</h3>
                         <input type="text" placeholder="Enter Your email id"
-                            class="input input-bordered w-full bg-transparent" />
+                            class="input input-bordered w-full bg-transparent"/>
 
-                        <button id="input-btn" class=" btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway "
-                            onclick="my_modal_5.showModal()" >Next</button>
+                        <button id="input-btn" class=" btn bg-[#1DD100] text-white border-none rounded-2xl w-full font-raleway" onclick="my_modal_5.showModal()" >Next</button>
 
                         <!-- pop up part -->
                         <dialog id="my_modal_5" class="modal modal-middle ">

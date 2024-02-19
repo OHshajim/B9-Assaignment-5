@@ -47,7 +47,7 @@ for (const seat of seats) {
        
         // show tickets
         Container.classList.remove('hidden');
-        showTickets(seat)
+        showTickets(seat);
 
         // coupon part 
         couponBTN.addEventListener('click', function () {
